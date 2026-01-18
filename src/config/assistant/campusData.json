@@ -1,502 +1,982 @@
 [
-  {
-    "cityId": "CITY_001",
-    "cityName": "Gurgaon",
-    "locations": [
-      {
-        "locationId": "LOC_001",
-        "locationName": "Smartworks Cyberhub",
-        "canteens": [
-          {
-            "canteenId": "CAN_LOC_001",
-            "canteenName": "Central Canteen",
-            "type": "Canteen",
-            "scope": "LOCATION",
-            "serviceFloor": "Ground Floor",
-            "isActive": true,
-            "menu": {
-              "categories": [
-                {
-                  "categoryId": "CAT_001",
-                  "categoryName": "Breakfast",
-                  "subcategories": [
-                    {
-                      "subcategoryId": "SUBCAT_001",
-                      "subcategoryName": "Indian",
-                      "items": [
-                        {
-                          "itemId": "ITEM_001",
-                          "itemName": "Aloo Paratha",
-                          "price": 60,
-                          "isAvailable": true,
-                          "description": "2 Parathas with curd & pickle"
-                        },
-                        {
-                          "itemId": "ITEM_002",
-                          "itemName": "Poha",
-                          "price": 40,
-                          "isAvailable": true,
-                          "description": "Light breakfast with peanuts"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryId": "CAT_002",
-                  "categoryName": "Beverages",
-                  "subcategories": [
-                    {
-                      "subcategoryId": "SUBCAT_002",
-                      "subcategoryName": "Hot Beverages",
-                      "items": [
-                        {
-                          "itemId": "ITEM_003",
-                          "itemName": "Tea",
-                          "price": 20,
-                          "isAvailable": true,
-                          "description": "Standard chai"
-                        },
-                        {
-                          "itemId": "ITEM_004",
-                          "itemName": "Coffee",
-                          "price": 35,
-                          "isAvailable": true,
-                          "description": "Hot coffee"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ],
-        "floors": [
-          {
-            "floorId": "FLR_001",
-            "floorName": "4th Floor",
-            "canteens": [
-              {
-                "canteenId": "CAN_F_004_01",
-                "canteenName": "Cafe Aroma",
-                "type": "Cafe",
-                "scope": "FLOOR",
-                "isActive": true,
-                "menu": {
-                  "categories": [
-                    {
-                      "categoryId": "CAT_003",
-                      "categoryName": "Coffee",
-                      "subcategories": [
-                        {
-                          "subcategoryId": "SUBCAT_003",
-                          "subcategoryName": "Cold Coffee",
-                          "items": [
-                            {
-                              "itemId": "ITEM_005",
-                              "itemName": "Cold Coffee",
-                              "price": 80,
-                              "isAvailable": true,
-                              "description": "Chilled coffee with ice"
-                            },
-                            {
-                              "itemId": "ITEM_006",
-                              "itemName": "Chocolate Cold Coffee",
-                              "price": 110,
-                              "isAvailable": true,
-                              "description": "Cold coffee with chocolate"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "categoryId": "CAT_004",
-                      "categoryName": "Snacks",
-                      "subcategories": [
-                        {
-                          "subcategoryId": "SUBCAT_004",
-                          "subcategoryName": "Quick Bites",
-                          "items": [
-                            {
-                              "itemId": "ITEM_007",
-                              "itemName": "Veg Sandwich",
-                              "price": 70,
-                              "isAvailable": true,
-                              "description": "Grilled veg sandwich"
-                            },
-                            {
-                              "itemId": "ITEM_008",
-                              "itemName": "French Fries",
-                              "price": 90,
-                              "isAvailable": false,
-                              "description": "Currently out of stock"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "devices": [
-              {
-                "deviceId": "DEV_001",
-                "deviceType": "LIGHT",
-                "deviceSubtype": "CABIN_LIGHT",
-                "deviceName": "Cabin Light - 4F Zone A",
-                "isActive": true
-              },
-              {
-                "deviceId": "DEV_002",
-                "deviceType": "AC",
-                "deviceSubtype": "CENTRAL_AC",
-                "deviceName": "Central AC - 4F",
-                "isActive": true
-              }
-            ],
-            "clients": [
-              {
-                "clientId": "CL_001",
-                "clientName": "Prodigal AI",
-                "officeArea": "4F Wing A",
-                "isActive": true
-              },
-              {
-                "clientId": "CL_002",
-                "clientName": "Mobiloitte",
-                "officeArea": "4F Wing B",
-                "isActive": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "locationId": "LOC_002",
-        "locationName": "Smartworks Udyog Vihar",
-        "canteens": [
-          {
-            "canteenId": "CAN_LOC_002",
-            "canteenName": "Udyog Central Kitchen",
-            "type": "Canteen",
-            "scope": "LOCATION",
-            "serviceFloor": "1st Floor",
-            "isActive": true,
-            "menu": {
-              "categories": [
-                {
-                  "categoryId": "CAT_005",
-                  "categoryName": "Lunch",
-                  "subcategories": [
-                    {
-                      "subcategoryId": "SUBCAT_005",
-                      "subcategoryName": "North Indian",
-                      "items": [
-                        {
-                          "itemId": "ITEM_009",
-                          "itemName": "Dal Makhani + Rice",
-                          "price": 150,
-                          "isAvailable": true,
-                          "description": "Creamy dal with rice"
-                        },
-                        {
-                          "itemId": "ITEM_010",
-                          "itemName": "Paneer Butter Masala + Naan",
-                          "price": 190,
-                          "isAvailable": true,
-                          "description": "Paneer curry with 2 naan"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ],
-        "floors": [
-          {
-            "floorId": "FLR_002",
-            "floorName": "2nd Floor",
-            "canteens": [
-              {
-                "canteenId": "CAN_F_002_01",
-                "canteenName": "Tea Corner",
-                "type": "Cafe",
-                "scope": "FLOOR",
-                "isActive": true,
-                "menu": {
-                  "categories": [
-                    {
-                      "categoryId": "CAT_006",
-                      "categoryName": "Beverages",
-                      "subcategories": [
-                        {
-                          "subcategoryId": "SUBCAT_006",
-                          "subcategoryName": "Tea",
-                          "items": [
-                            {
-                              "itemId": "ITEM_011",
-                              "itemName": "Masala Tea",
-                              "price": 25,
-                              "isAvailable": true,
-                              "description": "Spiced masala chai"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "devices": [
-              {
-                "deviceId": "DEV_003",
-                "deviceType": "LIGHT",
-                "deviceSubtype": "LOBBY_LIGHT",
-                "deviceName": "Lobby Light - 2F",
-                "isActive": true
-              }
-            ],
-            "clients": [
-              {
-                "clientId": "CL_003",
-                "clientName": "FinTech Co.",
-                "officeArea": "2F Wing A",
-                "isActive": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    "cityId": "CITY_002",
-    "cityName": "Noida",
-    "locations": [
-      {
-        "locationId": "LOC_003",
-        "locationName": "Smartworks Noida Sector 62",
-        "canteens": [
-          {
-            "canteenId": "CAN_LOC_003",
-            "canteenName": "Noida Food Court",
-            "type": "Canteen",
-            "scope": "LOCATION",
-            "serviceFloor": "Ground Floor",
-            "isActive": true,
-            "menu": {
-              "categories": [
-                {
-                  "categoryId": "CAT_007",
-                  "categoryName": "Fast Food",
-                  "subcategories": [
-                    {
-                      "subcategoryId": "SUBCAT_007",
-                      "subcategoryName": "Burgers",
-                      "items": [
-                        {
-                          "itemId": "ITEM_012",
-                          "itemName": "Veg Burger",
-                          "price": 90,
-                          "isAvailable": true,
-                          "description": "Classic veg burger"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ],
-        "floors": [
-          {
-            "floorId": "FLR_003",
-            "floorName": "6th Floor",
-            "canteens": [
-              {
-                "canteenId": "CAN_F_006_01",
-                "canteenName": "Healthy Bowl",
-                "type": "Cafe",
-                "scope": "FLOOR",
-                "isActive": true,
-                "menu": {
-                  "categories": [
-                    {
-                      "categoryId": "CAT_008",
-                      "categoryName": "Healthy",
-                      "subcategories": [
-                        {
-                          "subcategoryId": "SUBCAT_008",
-                          "subcategoryName": "Salads",
-                          "items": [
-                            {
-                              "itemId": "ITEM_013",
-                              "itemName": "Greek Salad",
-                              "price": 160,
-                              "isAvailable": true,
-                              "description": "Veg salad with feta style topping"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "devices": [
-              {
-                "deviceId": "DEV_004",
-                "deviceType": "AC",
-                "deviceSubtype": "SPLIT_AC",
-                "deviceName": "Split AC - 6F Zone C",
-                "isActive": true
-              }
-            ],
-            "clients": [
-              {
-                "clientId": "CL_004",
-                "clientName": "EdTech Startup",
-                "officeArea": "6F Wing C",
-                "isActive": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    "cityId": "CITY_003",
-    "cityName": "Bangalore",
-    "locations": [
-      {
-        "locationId": "LOC_004",
-        "locationName": "Smartworks MG Road",
-        "canteens": [
-          {
-            "canteenId": "CAN_LOC_004",
-            "canteenName": "MG Food Hub",
-            "type": "Canteen",
-            "scope": "LOCATION",
-            "serviceFloor": "Ground Floor",
-            "isActive": true,
-            "menu": {
-              "categories": [
-                {
-                  "categoryId": "CAT_009",
-                  "categoryName": "South Indian",
-                  "subcategories": [
-                    {
-                      "subcategoryId": "SUBCAT_009",
-                      "subcategoryName": "Dosa",
-                      "items": [
-                        {
-                          "itemId": "ITEM_014",
-                          "itemName": "Masala Dosa",
-                          "price": 120,
-                          "isAvailable": true,
-                          "description": "Dosa with aloo masala"
-                        },
-                        {
-                          "itemId": "ITEM_015",
-                          "itemName": "Plain Dosa",
-                          "price": 90,
-                          "isAvailable": true,
-                          "description": "Crispy dosa with chutney"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ],
-        "floors": [
-          {
-            "floorId": "FLR_004",
-            "floorName": "3rd Floor",
-            "canteens": [
-              {
-                "canteenId": "CAN_F_003_01",
-                "canteenName": "Cafe Bengaluru",
-                "type": "Cafe",
-                "scope": "FLOOR",
-                "isActive": true,
-                "menu": {
-                  "categories": [
-                    {
-                      "categoryId": "CAT_010",
-                      "categoryName": "Beverages",
-                      "subcategories": [
-                        {
-                          "subcategoryId": "SUBCAT_010",
-                          "subcategoryName": "Coffee",
-                          "items": [
-                            {
-                              "itemId": "ITEM_016",
-                              "itemName": "Filter Coffee",
-                              "price": 40,
-                              "isAvailable": true,
-                              "description": "Traditional South filter coffee"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "devices": [
-              {
-                "deviceId": "DEV_005",
-                "deviceType": "LIGHT",
-                "deviceSubtype": "MEETING_LIGHT",
-                "deviceName": "Meeting Room Light - 3F",
-                "isActive": true
-              }
-            ],
-            "clients": [
-              {
-                "clientId": "CL_005",
-                "clientName": "AI Startup Bengaluru",
-                "officeArea": "3F Wing A",
-                "isActive": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
-
 {
-  followUp :true/false,
-  message: if follwup is true then according to that else final answer,
-  classification: ne of them[TICKET_CREATE
-
-ORDER_CREATE
-
-LAST_ORDER_CREATE
-
-DEVICE_CONTROL],
-
-locatinId:"",
-floorId:"",
-category:"",
-Subcategory:"",
-itemId:[]eitherit for food item or device id,
-description:""
+"cityId": "CITY_001",
+"cityName": "Gurgaon",
+"locations": [
+{
+"locationId": "LOC_001",
+"locationName": "Smartworks Cyberhub",
+"timezone": "Asia/Kolkata",
+"address": "Cyberhub, DLF Phase 2, Gurgaon",
+"isActive": true,
+"ticketCategories": [
+{
+"categoryId": "TCK_CAT_001",
+"categoryName": "Maintenance",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_001", "subcategoryName": "AC" },
+{ "subcategoryId": "TCK_SUB_002", "subcategoryName": "Electrical" },
+{ "subcategoryId": "TCK_SUB_003", "subcategoryName": "Plumbing" },
+{ "subcategoryId": "TCK_SUB_004", "subcategoryName": "Housekeeping" }
+]
+},
+{
+"categoryId": "TCK_CAT_002",
+"categoryName": "IT Support",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_005", "subcategoryName": "Internet" },
+{ "subcategoryId": "TCK_SUB_006", "subcategoryName": "System" },
+{ "subcategoryId": "TCK_SUB_007", "subcategoryName": "Printer" }
+]
+},
+{
+"categoryId": "TCK_CAT_003",
+"categoryName": "Admin",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_008", "subcategoryName": "Access Card" },
+{ "subcategoryId": "TCK_SUB_009", "subcategoryName": "Seating" }
+]
 }
+],
+"canteens": [
+{
+"canteenId": "CAN_LOC_001",
+"canteenName": "Central Canteen",
+"type": "Canteen",
+"scope": "LOCATION",
+"serviceFloor": "Ground Floor",
+"isActive": true,
+"timings": { "open": "08:00", "close": "20:00" },
+"supportsPickup": true,
+"supportsDeskDelivery": true,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 5
+},
+"orderRules": {
+"maxItemQty": 10,
+"maxOrderTotal": 2000
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_001",
+"categoryName": "Breakfast",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_001",
+"subcategoryName": "Indian",
+"items": [
+{
+"itemId": "ITEM_001",
+"itemName": "Aloo Paratha",
+"price": 60,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Medium",
+"tags": ["Breakfast", "Popular"],
+"prepTimeMins": 10,
+"description": "2 Parathas with curd & pickle"
+},
+{
+"itemId": "ITEM_002",
+"itemName": "Poha",
+"price": 40,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Low",
+"tags": ["Breakfast", "Light"],
+"prepTimeMins": 8,
+"description": "Light breakfast with peanuts"
+},
+{
+"itemId": "ITEM_017",
+"itemName": "Idli Sambhar",
+"price": 55,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Low",
+"tags": ["Breakfast", "South Indian"],
+"prepTimeMins": 10,
+"description": "Steamed idlis with sambhar & chutney"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_002",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_002",
+"subcategoryName": "Hot Beverages",
+"items": [
+{
+"itemId": "ITEM_003",
+"itemName": "Tea",
+"price": 20,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 3,
+"description": "Standard chai"
+},
+{
+"itemId": "ITEM_004",
+"itemName": "Coffee",
+"price": 35,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 4,
+"description": "Hot coffee"
+},
+{
+"itemId": "ITEM_018",
+"itemName": "Green Tea",
+"price": 30,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Healthy"],
+"prepTimeMins": 4,
+"description": "Light green tea"
+}
+]
+},
+{
+"subcategoryId": "SUBCAT_011",
+"subcategoryName": "Cold Beverages",
+"items": [
+{
+"itemId": "ITEM_019",
+"itemName": "Lemon Water",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Refreshing"],
+"prepTimeMins": 3,
+"description": "Fresh lemon water"
+},
+{
+"itemId": "ITEM_020",
+"itemName": "Cold Coffee (Classic)",
+"price": 75,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee"],
+"prepTimeMins": 5,
+"description": "Chilled coffee (classic)"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_011",
+"categoryName": "Snacks",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_012",
+"subcategoryName": "Quick Bites",
+"items": [
+{
+"itemId": "ITEM_021",
+"itemName": "Veg Puff",
+"price": 35,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Snack"],
+"prepTimeMins": 5,
+"description": "Veg puff (baked)"
+},
+{
+"itemId": "ITEM_022",
+"itemName": "Samosa",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Snack", "Popular"],
+"prepTimeMins": 5,
+"description": "Crispy veg samosa"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"floors": [
+{
+"floorId": "FLR_001",
+"floorName": "4th Floor",
+"isActive": true,
+"canteens": [
+{
+"canteenId": "CAN_F_004_01",
+"canteenName": "Cafe Aroma",
+"type": "Cafe",
+"scope": "FLOOR",
+"isActive": true,
+"timings": { "open": "09:00", "close": "19:30" },
+"supportsPickup": true,
+"supportsDeskDelivery": false,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 0
+},
+"orderRules": {
+"maxItemQty": 8,
+"maxOrderTotal": 1500
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_003",
+"categoryName": "Coffee",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_003",
+"subcategoryName": "Cold Coffee",
+"items": [
+{
+"itemId": "ITEM_005",
+"itemName": "Cold Coffee",
+"price": 80,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee"],
+"prepTimeMins": 6,
+"description": "Chilled coffee with ice"
+},
+{
+"itemId": "ITEM_006",
+"itemName": "Chocolate Cold Coffee",
+"price": 110,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee", "Chocolate"],
+"prepTimeMins": 7,
+"description": "Cold coffee with chocolate"
+},
+{
+"itemId": "ITEM_023",
+"itemName": "Vanilla Cold Coffee",
+"price": 120,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee", "Vanilla"],
+"prepTimeMins": 7,
+"description": "Cold coffee with vanilla flavor"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_004",
+"categoryName": "Snacks",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_004",
+"subcategoryName": "Quick Bites",
+"items": [
+{
+"itemId": "ITEM_007",
+"itemName": "Veg Sandwich",
+"price": 70,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Snack", "Quick Bite"],
+"prepTimeMins": 8,
+"description": "Grilled veg sandwich"
+},
+{
+"itemId": "ITEM_008",
+"itemName": "French Fries",
+"price": 90,
+"isAvailable": false,
+"isVeg": true,
+"tags": ["Snack"],
+"prepTimeMins": 10,
+"description": "Currently out of stock"
+},
+{
+"itemId": "ITEM_024",
+"itemName": "Cheese Toast",
+"price": 85,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Snack", "Cheesy"],
+"prepTimeMins": 7,
+"description": "Toasted bread with cheese"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"devices": [
+{
+"deviceId": "DEV_001",
+"deviceType": "LIGHT",
+"deviceSubtype": "CABIN_LIGHT",
+"deviceName": "Cabin Light - 4F Zone A",
+"zone": "4F Zone A",
+"roomName": "Cabin Area",
+"isActive": true,
+"supportedCommands": ["ON", "OFF"]
+},
+{
+"deviceId": "DEV_002",
+"deviceType": "AC",
+"deviceSubtype": "CENTRAL_AC",
+"deviceName": "Central AC - 4F",
+"zone": "4F Central",
+"roomName": "Floor Cooling",
+"isActive": true,
+"supportedCommands": ["ON", "OFF"]
+}
+],
+"restrictedDeviceTypes": ["FIRE_ALARM", "ELEVATOR"],
+"clients": [
+{
+"clientId": "CL_001",
+"clientName": "Prodigal AI",
+"officeArea": "4F Wing A",
+"isActive": true,
+"requiresClientForTicket": false
+},
+{
+"clientId": "CL_002",
+"clientName": "Mobiloitte",
+"officeArea": "4F Wing B",
+"isActive": true,
+"requiresClientForTicket": false
+}
+]
+}
+]
+},
+{
+"locationId": "LOC_002",
+"locationName": "Smartworks Udyog Vihar",
+"timezone": "Asia/Kolkata",
+"address": "Udyog Vihar Phase 4, Gurgaon",
+"isActive": true,
+"ticketCategories": [
+{
+"categoryId": "TCK_CAT_001",
+"categoryName": "Maintenance",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_001", "subcategoryName": "AC" },
+{ "subcategoryId": "TCK_SUB_002", "subcategoryName": "Electrical" },
+{ "subcategoryId": "TCK_SUB_003", "subcategoryName": "Plumbing" }
+]
+},
+{
+"categoryId": "TCK_CAT_002",
+"categoryName": "IT Support",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_005", "subcategoryName": "Internet" }
+]
+}
+],
+"canteens": [
+{
+"canteenId": "CAN_LOC_002",
+"canteenName": "Udyog Central Kitchen",
+"type": "Canteen",
+"scope": "LOCATION",
+"serviceFloor": "1st Floor",
+"isActive": true,
+"timings": { "open": "09:00", "close": "20:00" },
+"supportsPickup": true,
+"supportsDeskDelivery": true,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 10
+},
+"orderRules": {
+"maxItemQty": 10,
+"maxOrderTotal": 2500
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_005",
+"categoryName": "Lunch",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_005",
+"subcategoryName": "North Indian",
+"items": [
+{
+"itemId": "ITEM_009",
+"itemName": "Dal Makhani + Rice",
+"price": 150,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Medium",
+"tags": ["Lunch", "Popular"],
+"prepTimeMins": 12,
+"description": "Creamy dal with rice"
+},
+{
+"itemId": "ITEM_010",
+"itemName": "Paneer Butter Masala + Naan",
+"price": 190,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Medium",
+"tags": ["Lunch"],
+"prepTimeMins": 15,
+"description": "Paneer curry with 2 naan"
+},
+{
+"itemId": "ITEM_025",
+"itemName": "Rajma Chawal",
+"price": 140,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Low",
+"tags": ["Lunch"],
+"prepTimeMins": 12,
+"description": "Rajma served with rice"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_012",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_013",
+"subcategoryName": "Hot",
+"items": [
+{
+"itemId": "ITEM_026",
+"itemName": "Masala Tea",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 3,
+"description": "Spiced masala chai"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"floors": [
+{
+"floorId": "FLR_002",
+"floorName": "2nd Floor",
+"isActive": true,
+"canteens": [
+{
+"canteenId": "CAN_F_002_01",
+"canteenName": "Tea Corner",
+"type": "Cafe",
+"scope": "FLOOR",
+"isActive": true,
+"timings": { "open": "09:00", "close": "18:30" },
+"supportsPickup": true,
+"supportsDeskDelivery": false,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 0
+},
+"orderRules": {
+"maxItemQty": 6,
+"maxOrderTotal": 700
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_006",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_006",
+"subcategoryName": "Tea",
+"items": [
+{
+"itemId": "ITEM_011",
+"itemName": "Masala Tea",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 3,
+"description": "Spiced masala chai"
+},
+{
+"itemId": "ITEM_027",
+"itemName": "Ginger Tea",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 3,
+"description": "Chai with ginger"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"devices": [
+{
+"deviceId": "DEV_003",
+"deviceType": "LIGHT",
+"deviceSubtype": "LOBBY_LIGHT",
+"deviceName": "Lobby Light - 2F",
+"zone": "2F Lobby",
+"roomName": "Lobby Area",
+"isActive": true,
+"supportedCommands": ["ON", "OFF"]
+}
+],
+"restrictedDeviceTypes": ["FIRE_ALARM", "ELEVATOR"],
+"clients": [
+{
+"clientId": "CL_003",
+"clientName": "FinTech Co.",
+"officeArea": "2F Wing A",
+"isActive": true,
+"requiresClientForTicket": false
+}
+]
+}
+]
+}
+]
+},
+{
+"cityId": "CITY_002",
+"cityName": "Noida",
+"locations": [
+{
+"locationId": "LOC_003",
+"locationName": "Smartworks Noida Sector 62",
+"timezone": "Asia/Kolkata",
+"address": "Sector 62, Noida",
+"isActive": true,
+"ticketCategories": [
+{
+"categoryId": "TCK_CAT_001",
+"categoryName": "Maintenance",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_001", "subcategoryName": "AC" },
+{ "subcategoryId": "TCK_SUB_002", "subcategoryName": "Electrical" }
+]
+},
+{
+"categoryId": "TCK_CAT_002",
+"categoryName": "IT Support",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_005", "subcategoryName": "Internet" },
+{ "subcategoryId": "TCK_SUB_006", "subcategoryName": "System" }
+]
+}
+],
+"canteens": [
+{
+"canteenId": "CAN_LOC_003",
+"canteenName": "Noida Food Court",
+"type": "Canteen",
+"scope": "LOCATION",
+"serviceFloor": "Ground Floor",
+"isActive": true,
+"timings": { "open": "09:00", "close": "20:30" },
+"supportsPickup": true,
+"supportsDeskDelivery": true,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 5
+},
+"orderRules": {
+"maxItemQty": 10,
+"maxOrderTotal": 2200
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_007",
+"categoryName": "Fast Food",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_007",
+"subcategoryName": "Burgers",
+"items": [
+{
+"itemId": "ITEM_012",
+"itemName": "Veg Burger",
+"price": 90,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Fast Food"],
+"prepTimeMins": 10,
+"description": "Classic veg burger"
+},
+{
+"itemId": "ITEM_028",
+"itemName": "Cheese Veg Burger",
+"price": 110,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Fast Food", "Cheesy"],
+"prepTimeMins": 11,
+"description": "Veg burger with cheese"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_013",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_014",
+"subcategoryName": "Cold Drinks",
+"items": [
+{
+"itemId": "ITEM_029",
+"itemName": "Cold Coffee",
+"price": 85,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee"],
+"prepTimeMins": 6,
+"description": "Chilled cold coffee"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"floors": [
+{
+"floorId": "FLR_003",
+"floorName": "6th Floor",
+"isActive": true,
+"canteens": [
+{
+"canteenId": "CAN_F_006_01",
+"canteenName": "Healthy Bowl",
+"type": "Cafe",
+"scope": "FLOOR",
+"isActive": true,
+"timings": { "open": "10:00", "close": "19:00" },
+"supportsPickup": true,
+"supportsDeskDelivery": false,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 0
+},
+"orderRules": {
+"maxItemQty": 6,
+"maxOrderTotal": 1500
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_008",
+"categoryName": "Healthy",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_008",
+"subcategoryName": "Salads",
+"items": [
+{
+"itemId": "ITEM_013",
+"itemName": "Greek Salad",
+"price": 160,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Healthy", "Low Carb"],
+"prepTimeMins": 10,
+"description": "Veg salad with feta style topping"
+},
+{
+"itemId": "ITEM_030",
+"itemName": "Sprout Salad",
+"price": 140,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Healthy", "Protein"],
+"prepTimeMins": 8,
+"description": "Healthy sprout mix"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"devices": [
+{
+"deviceId": "DEV_004",
+"deviceType": "AC",
+"deviceSubtype": "SPLIT_AC",
+"deviceName": "Split AC - 6F Zone C",
+"zone": "6F Zone C",
+"roomName": "Open Area",
+"isActive": true,
+"supportedCommands": ["ON", "OFF"]
+}
+],
+"restrictedDeviceTypes": ["FIRE_ALARM", "ELEVATOR"],
+"clients": [
+{
+"clientId": "CL_004",
+"clientName": "EdTech Startup",
+"officeArea": "6F Wing C",
+"isActive": true,
+"requiresClientForTicket": false
+}
+]
+}
+]
+}
+]
+},
+{
+"cityId": "CITY_003",
+"cityName": "Bangalore",
+"locations": [
+{
+"locationId": "LOC_004",
+"locationName": "Smartworks MG Road",
+"timezone": "Asia/Kolkata",
+"address": "MG Road, Bangalore",
+"isActive": true,
+"ticketCategories": [
+{
+"categoryId": "TCK_CAT_001",
+"categoryName": "Maintenance",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_001", "subcategoryName": "AC" },
+{ "subcategoryId": "TCK_SUB_002", "subcategoryName": "Electrical" },
+{ "subcategoryId": "TCK_SUB_004", "subcategoryName": "Housekeeping" }
+]
+},
+{
+"categoryId": "TCK_CAT_002",
+"categoryName": "IT Support",
+"subcategories": [
+{ "subcategoryId": "TCK_SUB_005", "subcategoryName": "Internet" },
+{ "subcategoryId": "TCK_SUB_006", "subcategoryName": "System" }
+]
+}
+],
+"canteens": [
+{
+"canteenId": "CAN_LOC_004",
+"canteenName": "MG Food Hub",
+"type": "Canteen",
+"scope": "LOCATION",
+"serviceFloor": "Ground Floor",
+"isActive": true,
+"timings": { "open": "08:30", "close": "20:00" },
+"supportsPickup": true,
+"supportsDeskDelivery": true,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 5
+},
+"orderRules": {
+"maxItemQty": 10,
+"maxOrderTotal": 2500
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_009",
+"categoryName": "South Indian",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_009",
+"subcategoryName": "Dosa",
+"items": [
+{
+"itemId": "ITEM_014",
+"itemName": "Masala Dosa",
+"price": 120,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Medium",
+"tags": ["South Indian", "Popular"],
+"prepTimeMins": 12,
+"description": "Dosa with aloo masala"
+},
+{
+"itemId": "ITEM_015",
+"itemName": "Plain Dosa",
+"price": 90,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Low",
+"tags": ["South Indian"],
+"prepTimeMins": 10,
+"description": "Crispy dosa with chutney"
+},
+{
+"itemId": "ITEM_031",
+"itemName": "Onion Dosa",
+"price": 110,
+"isAvailable": true,
+"isVeg": true,
+"spiceLevel": "Medium",
+"tags": ["South Indian"],
+"prepTimeMins": 11,
+"description": "Dosa with onion topping"
+}
+]
+}
+]
+},
+{
+"categoryId": "CAT_014",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_015",
+"subcategoryName": "Tea & Coffee",
+"items": [
+{
+"itemId": "ITEM_032",
+"itemName": "Masala Tea",
+"price": 25,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink"],
+"prepTimeMins": 3,
+"description": "Hot masala chai"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"floors": [
+{
+"floorId": "FLR_004",
+"floorName": "3rd Floor",
+"isActive": true,
+"canteens": [
+{
+"canteenId": "CAN_F_003_01",
+"canteenName": "Cafe Bengaluru",
+"type": "Cafe",
+"scope": "FLOOR",
+"isActive": true,
+"timings": { "open": "09:30", "close": "19:00" },
+"supportsPickup": true,
+"supportsDeskDelivery": false,
+"pricingRules": {
+"gstPercent": 5,
+"serviceChargePercent": 0,
+"packingCharge": 0
+},
+"orderRules": {
+"maxItemQty": 6,
+"maxOrderTotal": 1200
+},
+"menu": {
+"categories": [
+{
+"categoryId": "CAT_010",
+"categoryName": "Beverages",
+"subcategories": [
+{
+"subcategoryId": "SUBCAT_010",
+"subcategoryName": "Coffee",
+"items": [
+{
+"itemId": "ITEM_016",
+"itemName": "Filter Coffee",
+"price": 40,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Coffee"],
+"prepTimeMins": 4,
+"description": "Traditional South filter coffee"
+},
+{
+"itemId": "ITEM_033",
+"itemName": "Cold Coffee",
+"price": 85,
+"isAvailable": true,
+"isVeg": true,
+"tags": ["Drink", "Cold Coffee"],
+"prepTimeMins": 6,
+"description": "Chilled cold coffee"
+}
+]
+}
+]
+}
+]
+}
+}
+],
+"devices": [
+{
+"deviceId": "DEV_005",
+"deviceType": "LIGHT",
+"deviceSubtype": "MEETING_LIGHT",
+"deviceName": "Meeting Room Light - 3F",
+"zone": "3F Meeting Rooms",
+"roomName": "Meeting Room Area",
+"isActive": true,
+"supportedCommands": ["ON", "OFF"]
+}
+],
+"restrictedDeviceTypes": ["FIRE_ALARM", "ELEVATOR"],
+"clients": [
+{
+"clientId": "CL_005",
+"clientName": "AI Startup Bengaluru",
+"officeArea": "3F Wing A",
+"isActive": true,
+"requiresClientForTicket": false
+}
+]
+}
+]
+}
+]
+}
+]

@@ -15,6 +15,16 @@ const createThread = async () => {
 // ✅ Chat with assistant (create msg + run + get response)
 const chatWithAssistant = async ({ threadId, message }) => {
   if (!message) throw new Error("Message is required");
+const authFlag = true // example
+// cityId:CITY_001
+// locationId:LOC_001
+// floorId:FLR_001
+// userId:U_001
+message = `auth:${authFlag}
+
+---
+UserMessage:${message}`;
+
 
   // ✅ Create thread if not provided
   let finalThreadId = threadId;
